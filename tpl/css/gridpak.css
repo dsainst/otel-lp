@@ -1,0 +1,137 @@
+/* --------------------------------------------------
+Container
+-------------------------------------------------- */
+div#container,
+div.container {
+  position: relative;
+  width: 1060px;
+  min-width: 1060px;
+  margin: 0 auto;
+  padding: 0;
+}
+/* --------------------------------------------------
+Grid
+-------------------------------------------------- */
+.column-row,
+.row {
+  margin: 0 0 0 -20px;
+}
+.column,
+.columns {
+  float: left;
+  display: inline;
+  margin: 0 0 0 20px;
+}
+.one {
+  width: 70px;
+}
+.two {
+  width: 160px;
+}
+.three {
+  width: 250px;
+}
+.four {
+  width: 340px;
+}
+.five {
+  width: 430px;
+}
+.six {
+  width: 520px;
+}
+.seven {
+  width: 610px;
+}
+.eight {
+  width: 700px;
+}
+.nine {
+  width: 790px;
+}
+.ten {
+  width: 880px;
+}
+.eleven {
+  width: 970px;
+}
+.twelve {
+  width: 1060px;
+}
+.offset-by-one-half {
+  margin-left: 45px;
+}
+.offset-by-one {
+  margin-left: 90px;
+}
+.offset-by-two {
+  margin-left: 180px;
+}
+.offset-by-three {
+  margin-left: 270px;
+}
+.offset-by-four {
+  margin-left: 360px;
+}
+.offset-by-five {
+  margin-left: 450px;
+}
+.offset-by-six {
+  margin-left: 540px;
+}
+.offset-by-seven {
+  margin-left: 630px;
+}
+.offset-by-eight {
+  margin-left: 720px;
+}
+.offset-by-nine {
+  margin-left: 810px;
+}
+.offset-by-ten {
+  margin-left: 900px;
+}
+/* Clear the columns automagically, thanks @kneath */
+.column-row:after,
+.row:after,
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+* html .column-row,
+* html .row,
+* html .clearfix {
+  height: 1%;
+}
+.column-row,
+.row,
+.clearfix {
+  display: inline-block;
+}
+.column-row,
+.row,
+.clearfix {
+  display: block;
+}
+/* IE6 Problems ---------- */
+body.ie .column-row {
+  width: 1080px;
+}
+body.ie .eight .column-row {
+  width: 720px;
+}
+body.ie .nine .column-row {
+  width: 810px;
+}
+body.ie .ten .column-row {
+  width: 900px;
+}
+body.ie .eleven .column-row {
+  width: 990px;
+}
+body.ie .two-thirds .column-row {
+  width: 740px;
+}
